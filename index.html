@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulário Completo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon-TyperW.png">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <img src="favicon-TyperW.png" alt="Logo Typer">
+      <h2>MEI-TYPER</h2>
+    </div>
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" size="40" placeholder="Digite seu nome"><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" size="50" placeholder="Digite seu endereço"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" maxlength="3" size="12"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Sexo:</label><br>
+        <input type="radio" id="masc" name="sexo" value="Masc">
+        <label for="masc">Masculino</label><br>
+        <input type="radio" id="fem" name="sexo" value="Fem">
+        <label for="fem">Feminino</label><br><br>
+
+        <label for="Estado">Estado onde você mora:</label>
+        <select name="Estado">
+          <option value="">Selecionar uma cidade...</option>
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="PI">Piauí</option>
+          <option value="BA">Bahia</option>
+        </select>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Produtos de Interesse</legend>
+        <h3>5 produtos de interesse</h3>
+        <input type="checkbox" id="a" name="ter" value="A"><label for="a">Notebook</label><br>
+        <input type="checkbox" id="b" name="ter" value="B" checked><label for="b">Tablet</label><br>
+        <input type="checkbox" id="c" name="ter" value="C"><label for="c">Celular</label><br>
+        <input type="checkbox" id="d" name="ter" value="D"><label for="d">PC</label><br>
+        <input type="checkbox" id="e" name="ter" value="E"><label for="e">Smartwatch</label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Outros Produtos</legend>
+        <input type="radio" id="Rp" name="outros" value="E"><label for="Rp">Rádio</label><br>
+        <input type="radio" id="Pr" name="outros" value="F"><label for="Pr">TV</label><br>
+        <input type="radio" id="Pre" name="outros" value="G"><label for="Pre">Monitor</label><br>
+        <input type="radio" id="Per" name="outros" value="H"><label for="Per">Telefone</label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentários e Localização</legend>
+        <label for="obs">Comentários:</label>
+        <textarea name="obs" cols="60" rows="10"></textarea><br><br>
+      </fieldset>
+
+      <div class="button-group">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetar">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
